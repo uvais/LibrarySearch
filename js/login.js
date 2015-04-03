@@ -1,6 +1,6 @@
 // Login Form
 $(document).ready(function() {
-	
+	$('.mainDiv').html($('#mainDivRep').html());
 //Login form start here 
     var button = $('#loginButton');
     var box = $('#loginBox');
@@ -21,7 +21,7 @@ $(document).ready(function() {
     });
 
 
-$("#searchBtn").on('click', this, function(){
+$(".mainDiv #searchBtn").on('click', this, function(){
 	loadPopup();	
 });
 $(this).keyup(function(event) {
@@ -50,7 +50,12 @@ function disablePopup() {
 		popupStatus = 0;  // and set value to 0
 	}
 }
-
+$("#uploadSideButton").on('click', this, function(){
+	$('.mainDiv').html($('#uploadDiv').html());
+});
+$("#searchSideButton").on('click', this, function(){
+	$('.mainDiv').html($('#mainDivRep').html());
+});
 /*
 Syntax example for javascript function click event
 

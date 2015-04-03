@@ -26,7 +26,7 @@ a { text-decoration:none }
     border-radius:3px;
     -moz-border-radius:3px;
     position:relative;
-    z-index:30;
+    z-index:2;
     cursor:pointer;
 }
 
@@ -51,7 +51,7 @@ a { text-decoration:none }
     top:42px;
     right:8px;
     display:none;
-    z-index:29;
+    z-index:1;
 }
 
 /* If the Login Button has been clicked */
@@ -185,7 +185,7 @@ input:focus {
 }
 
 #backgroundPopup {
-	z-index: 1;
+	z-index: 3;
 	position: absolute;
 	display:none; 
 	height:100%;
@@ -194,4 +194,52 @@ input:focus {
 	top:0px;  
 	left:0px;
 	opacity: 0.7;
+}
+
+#sideBar {
+	position: absolute;
+	width: 150px;
+	height: 200px;
+	left: -4px;
+	top: 270px;
+}
+
+.sideButton {
+	display:inline-block;
+    float:right;
+    background:#d2e0ea url(../images/buttonbg.png) repeat-x; 
+    border:1px solid #899caa; 
+    border-radius:3px;
+    -moz-border-radius:3px;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+	width: 150px;
+}
+.sideButton span {
+    color:#445058; 
+    font-size:14px; 
+    font-weight:bold; 
+    text-shadow:1px 1px #fff; 
+    padding:7px 29px 9px 10px;
+    display:block;
+}
+#sideButton:hover {
+    background:url(../images/buttonbgHover.png) repeat-x;
+}
+#sideButton.active {
+    border-radius:3px 3px 0 0;
+}
+
+#sideButton.active span {
+    background-position:53px -76px;
+}
+
+/* A Line added to overlap the border */
+#sideButton.active em {
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#d2e0ea;
+    bottom:-1px;
 }
