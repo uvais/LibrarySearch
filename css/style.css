@@ -4,7 +4,11 @@ body {
 	background-image:url(../homeimage.jpg)
 }
 .mainDiv {
-	height: 100%
+	height: 400px;
+	position: absolute;
+	left: 433px;
+	top: 100px;
+	width: 500px;
 }
 
 a { text-decoration:none }
