@@ -56,11 +56,13 @@ $("#uploadSideButton").on('click', this, function(){
 $("#searchSideButton").on('click', this, function(){
 	$('.mainDiv').html($('#mainDivRep').html());
 });
-/*
-Syntax example for javascript function click event
-
-$('#toPopup').on('click', 'div.close', function(){
-		disablePopup();  // function close pop up
+$("#approveSideButton").on('click', this, function(){
+	$('.mainDiv').html($('#approvalDiv').html());
 });
-*/
+$("#adduserSideButton").on('click', this, function(){
+	$('.mainDiv').html($('#addUserDiv').html());
+});
+$("#changePassSideButton").on('click', this, function(){
+	$('.mainDiv').html($('#changePassDiv').html());
+});
 });

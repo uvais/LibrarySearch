@@ -202,7 +202,7 @@ input:focus {
 	width: 150px;
 	height: 200px;
 	left: -4px;
-	top: 270px;
+	top: 250px;
 }
 
 .sideButton {
@@ -243,4 +243,69 @@ input:focus {
     height:1px;
     background:#d2e0ea;
     bottom:-1px;
+}
+
+
+
+
+#sideBarAdmin {
+	position: absolute;
+	width: 150px;
+	height: 200px;
+	left: -4px;
+	top: 250px;
+}
+
+#sideBarAdmin .sideButton {
+	display:inline-block;
+    float:right;
+    background:#d2e0ea url(../images/buttonbg.png) repeat-x; 
+    border:1px solid #899caa; 
+    border-radius:3px;
+    -moz-border-radius:3px;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+	width: 150px;
+}
+#sideBarAdmin .sideButton span {
+    color:#445058; 
+    font-size:14px; 
+    font-weight:bold; 
+    text-shadow:1px 1px #fff; 
+    padding:7px 29px 9px 10px;
+    display:block;
+}
+#sideBarAdmin #sideButton:hover {
+    background:url(../images/buttonbgHover.png) repeat-x;
+}
+#sideBarAdmin #sideButton.active {
+    border-radius:3px 3px 0 0;
+}
+
+#sideBarAdmin #sideButton.active span {
+    background-position:53px -76px;
+}
+
+/* A Line added to overlap the border */
+#sideBarAdmin #sideButton.active em {
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#d2e0ea;
+    bottom:-1px;
+}
+#approveInternalDiv {
+	overflow-y: scroll;
+	background-color: #FFF;
+	height:400px;
+}
+#approveBtnDiv {
+	margin-left:150px;
+}
+#addUserDiv {
+	display:none;
+}
+#changePassDiv {
+	display:none;
 }
