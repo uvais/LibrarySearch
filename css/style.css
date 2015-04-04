@@ -9,6 +9,7 @@ body {
 	left: 433px;
 	top: 100px;
 	width: 500px;
+	font-weight:bold;
 }
 
 a { text-decoration:none }

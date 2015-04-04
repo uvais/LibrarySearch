@@ -21,7 +21,7 @@ $(document).ready(function() {
     });
 
 
-$(".mainDiv #searchBtn").on('click', this, function(){
+$(document).on('click', ".mainDiv #searchBtn", function(){
 	loadPopup();	
 });
 $(this).keyup(function(event) {
